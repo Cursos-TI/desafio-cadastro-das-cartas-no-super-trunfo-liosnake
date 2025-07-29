@@ -34,16 +34,16 @@ int main() {
     printf("A População é: %f", População);
 
     printf("\nDigite a Area\n");
-        scanf("%f", Area);    
+        scanf("%f", &Area);    
     printf("Area é: %.2f km²", Area);
 
     printf("\nDigite o PIB\n");
-        scanf("%f", PIB);    
+        scanf("%f", &PIB);    
     printf("O PIB é: %.2f bilhões", PIB);
 
     printf("\nDigite os pontos turisticos\n");
-        scanf("%d", pontosturisticos);    
-    printf("Os Pontos turisticos são: %d", pontosturisticos);
+        scanf("%d", &pontosturisticos);    
+    printf("Os Pontos turisticos são: %d\n", pontosturisticos);
 
     media = (float)(População/Area) /2;
     printf("A Densidade Populacional é: %.2f\n", Densidade);
