@@ -6,14 +6,17 @@ int main() {
 
     printf("\ncarta 1\n");
 
-    char Estado [50] = "São Paulo";
+    char Estado [50] = "A";
     char Codigo[50] = "A01";
     char Cidade[50] = "São Paulo";
-    int População = 12325000;
+    float População = 12325000;
     float Area = 1521.11;
     float PIB = 699.28;
     int pontosturisticos = 50;
-
+    float Densidade = População/Area; //populção/area
+    float Percapita= População/PIB; //PIB/População
+    float media;
+       
 
     printf("\nDigite o Estado\n");
         scanf("%s", &Estado);
@@ -28,8 +31,8 @@ int main() {
     printf("A Cidade é: %s", Cidade);
 
     printf("\nDigite a População\n");
-        scanf("%d", &População);    
-    printf("A População é: %d", População);
+        scanf("%f", &População);    
+    printf("A População é: %f", População);
 
     printf("\nDigite a Area\n");
         scanf("%f", &Area);    
@@ -43,6 +46,11 @@ int main() {
         scanf("%d", &pontosturisticos);    
     printf("pontos turisticos são: %d\n", pontosturisticos);
 
+    media = (float)(População/Area) /2;
+    printf("A Densidade Populacional é: %.2f\n", Densidade);
+    
+    media = (float)(População/PIB) /2;
+    printf("PIB per Capita é: %.2f\n", Percapita);
 
 
 
@@ -51,13 +59,16 @@ int main() {
 
      printf("\ncarta 2\n");
 
-    char Estado2 [50] = "Rio de Janeiro";
-    char Codigo2[50] = "A02";
+    char Estado2 [50] = "B";
+    char Codigo2[50] = "B02";
     char Cidade2[50] = "Rio de Janeiro";
     int População2 = 6748000;
     float Area2 = 1200.25;
     float PIB2 = 300.50;
     int pontosturisticos2 = 30;
+    float Densidade2 = População2/Area2; //populção/area
+    float Percapita2= População2/PIB2; //PIB/População
+    float media2;
 
 
     printf("\nDigite o Estado\n");
@@ -87,8 +98,15 @@ int main() {
     printf("\nDigite o pontosturisticos\n");
         scanf("%d", &pontosturisticos2);    
     printf("pontos turisticos são: %d", pontosturisticos2);
+
+     media = (float)(População2/Area2) /2;
+    printf("A Densidade Populacional é: %.2f\n", Densidade2);
+    
+    media2 = (float)(População2/PIB2) /2;
+    printf("PIB per Capita é: %.2f\n", Percapita2);
     
     return 0;
+
 
 
 }
