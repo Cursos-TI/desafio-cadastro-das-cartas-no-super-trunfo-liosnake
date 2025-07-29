@@ -8,7 +8,7 @@ int main() {
 
     char Estado [50] = "A";
     char Codigo[50] = "A01";
-    char Cidade[50] = "São Paulo";
+    char Cidade[49] = "São Paulo";
     float População = 12325000;
     float Area = 1521.11;
     float PIB = 699.28;
@@ -19,32 +19,31 @@ int main() {
        
 
     printf("\nDigite o Estado\n");
-        scanf("%s", &Estado);
+        scanf("%s", Estado);
     printf("O Estado é: %s", Estado);
 
-    printf("\nDigite o Codigo\n");
-        scanf("%s", &Codigo);
+    printf("\nDigite o Codigo (3 digitos)\n");
+        scanf("%s", Codigo);
     printf("O Codigo é: %s", Codigo);
 
-    printf("\nDigite a Cidade\n");
-        scanf("%s", &Cidade);    
-    printf("A Cidade é: %s", Cidade);
+        scanf("%49", Cidade);    
+    printf("\nA Cidade é: %s", Cidade);
 
     printf("\nDigite a População\n");
-        scanf("%f", &População);    
+        scanf("%f", População);    
     printf("A População é: %f", População);
 
     printf("\nDigite a Area\n");
-        scanf("%f", &Area);    
+        scanf("%f", Area);    
     printf("Area é: %.2f km²", Area);
 
     printf("\nDigite o PIB\n");
-        scanf("%f", &PIB);    
+        scanf("%f", PIB);    
     printf("O PIB é: %.2f bilhões", PIB);
 
-    printf("\nDigite o pontosturisticos\n");
-        scanf("%d", &pontosturisticos);    
-    printf("pontos turisticos são: %d\n", pontosturisticos);
+    printf("\nDigite os pontos turisticos\n");
+        scanf("%d", pontosturisticos);    
+    printf("Os Pontos turisticos são: %d", pontosturisticos);
 
     media = (float)(População/Area) /2;
     printf("A Densidade Populacional é: %.2f\n", Densidade);
@@ -61,8 +60,8 @@ int main() {
 
     char Estado2 [50] = "B";
     char Codigo2[50] = "B02";
-    char Cidade2[50] = "Rio de Janeiro";
-    int População2 = 6748000;
+    char Cidade2[49] = "Rio de Janeiro";
+    float População2 = 6748000;
     float Area2 = 1200.25;
     float PIB2 = 300.50;
     int pontosturisticos2 = 30;
@@ -72,16 +71,15 @@ int main() {
 
 
     printf("\nDigite o Estado\n");
-        scanf("%s", &Estado2);
+        scanf("%s", Estado2);
     printf("O Estado é: %s", Estado2);
 
-    printf("\nDigite o Codigo\n");
-        scanf("%s", &Codigo2);
+    printf("\nDigite o Codigo (3 digitos)\n");
+        scanf("%s", Codigo2);
     printf("O Codigo é: %s", Codigo2);
 
-    printf("\nDigite a Cidade\n");
-        scanf("%s", &Cidade2);    
-    printf("A Cidade é: %s", Cidade2);
+    scanf("%49", Cidade2);    
+    printf("\nA Cidade é: %s", Cidade2);
 
     printf("\nDigite a População\n");
         scanf("%d", &População2);    
@@ -96,10 +94,10 @@ int main() {
     printf("O PIB é: %.2f bilhões", PIB2);
 
     printf("\nDigite o pontosturisticos\n");
-        scanf("%d", &pontosturisticos2);    
+        scanf("%d", &pontosturisticos2);
     printf("pontos turisticos são: %d", pontosturisticos2);
 
-     media = (float)(População2/Area2) /2;
+     media2 = (float)(População2/Area2) /2;
     printf("A Densidade Populacional é: %.2f\n", Densidade2);
     
     media2 = (float)(População2/PIB2) /2;
