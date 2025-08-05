@@ -19,6 +19,9 @@ int main() {
     int pontosturisticos = 50;
     float Densidade = (float)Populacao / Area;//populção/area
     float Percapita = (PIB * 1e9) / Populacao; //PIB/População
+    float superpoder1 = (Populacao+Area+pontosturisticos+Percapita+(1.0/Densidade));
+
+
     
 
 
@@ -79,6 +82,7 @@ int main() {
     int pontosturisticos2 = 30;
     float Densidade2 = (float)Populacao2/Area2; //populção/area
     float Percapita2= (PIB2 * 1e9)/Populacao2; //PIB/População
+    float superpoder2 = (Populacao2+Area2+pontosturisticos2+Percapita2+(1.0/Densidade2));
     
 
     printf("\nDigite o Estado\n");
@@ -110,10 +114,10 @@ int main() {
 
     
     
-    printf("A Densidade Populacional é: %.2f\n", Densidade2);
+    printf("\nA Densidade Populacional é: %.2f\n", Densidade2);
 
     
-    printf("A Densidade Renda Per-Capita é: %.2f\n", Percapita2);
+    printf("\nA Densidade Renda Per-Capita é: %.2f\n", Percapita2);
 
 
     // Exibição dos Dados das Cartas:
@@ -127,6 +131,25 @@ int main() {
     printf("O pontosturisticos é: %d\n", pontosturisticos2);
     printf("A Densidade Populacional é: %.2f\n", Densidade2);
     printf("A Densidade Renda Per-Capita é: %.2f\n", Percapita2);
+
+    //(1 para carta1 < carta2 –  0 Carta 1 vence – e  –  1 Carta 2 vence)
+
+    int resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7; 
+
+    resultado1 = Populacao < Populacao2;
+    resultado2 = Area < Area2;
+    resultado3 = PIB < PIB2;
+    resultado4 = pontosturisticos < pontosturisticos2;
+    resultado5 = Densidade < Densidade2;
+    resultado6 = Percapita < Percapita2;
+    resultado7 = superpoder1 < superpoder2;
+    printf("A população é %d\n", resultado1);
+    printf("A Area é %d\n", resultado2);
+    printf("A PIB é %d\n", resultado3);
+    printf("A pontos turisticos é %d\n", resultado4);
+    printf("A Densidade é %d\n", resultado5);
+    printf("A Renda-Percapita é %d\n", resultado6);
+    printf("A super poder é %d\n", resultado7);
 
 
 
