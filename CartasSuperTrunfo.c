@@ -1,5 +1,3 @@
-
-
 #include <stdio.h>
 
 
@@ -136,13 +134,13 @@ int main() {
 
     int resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7; 
 
-    resultado1 = Populacao < Populacao2;
-    resultado2 = Area < Area2;
-    resultado3 = PIB < PIB2;
-    resultado4 = pontosturisticos < pontosturisticos2;
+    resultado1 = Populacao > Populacao2;
+    resultado2 = Area > Area2;
+    resultado3 = PIB > PIB2;
+    resultado4 = pontosturisticos > pontosturisticos2;
     resultado5 = Densidade < Densidade2;
-    resultado6 = Percapita < Percapita2;
-    resultado7 = superpoder1 < superpoder2;
+    resultado6 = Percapita > Percapita2;
+    resultado7 = superpoder1 > superpoder2;
     printf("A população é %d\n", resultado1);
     printf("A Area é %d\n", resultado2);
     printf("A PIB é %d\n", resultado3);
@@ -159,4 +157,3 @@ int main() {
 
     return 0;
 }
-
