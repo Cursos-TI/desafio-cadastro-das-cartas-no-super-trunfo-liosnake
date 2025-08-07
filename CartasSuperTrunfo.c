@@ -57,8 +57,8 @@ int main() {
     printf("A Densidade Renda Per-Capita é: %.2f\n", Percapita1);
 
        //// Cálculos da Carta 1
-    Densidade1 = (float)Populacao1/Area; //populcao/area
-    Percapita1 = (PIB * 1e9)/Populacao1; //PIB/Populacao
+    Densidade1 = (float)Populacao1/Area1; //populcao/area
+    Percapita1 = (PIB1 * 1e9)/Populacao1; //PIB/Populacao
     superpoder1 = (Populacao1+Area1+pontosturisticos1+Percapita1+(1.0/Densidade1));
 
 
@@ -68,8 +68,8 @@ int main() {
     printf("Codigo: %s\n", Codigo1);
     printf("Cidade: %s\n", Cidade1);
     printf("Populacao: %lu habitantes\n", Populacao1);
-    printf("Area: %.2f km²\n", Area);
-    printf("PIB: %.2f Bilhões\n", PIB);
+    printf("Area: %.2f km²\n", Area1);
+    printf("PIB: %.2f Bilhões\n", PIB1);
     printf("O pontosturisticos é: %d\n", pontosturisticos1);
     printf("A Densidade Populacional é: %.2f\n", Densidade1);
     printf("A Densidade Renda Per-Capita é: %.2f\n", Percapita1);
@@ -144,12 +144,12 @@ int main() {
 
     int resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7; 
 
-    resultado1 = Populacao > Populacao2;
-    resultado2 = Area > Area2;
-    resultado3 = PIB > PIB2;
-    resultado4 = pontosturisticos > pontosturisticos2;
-    resultado5 = Densidade < Densidade2;
-    resultado6 = Percapita > Percapita2;
+    resultado1 = Populacao1 > Populacao2;
+    resultado2 = Area1 > Area2;
+    resultado3 = PIB1 > PIB2;
+    resultado4 = pontosturisticos1 > pontosturisticos2;
+    resultado5 = Densidade1 < Densidade2;
+    resultado6 = Percapita1 > Percapita2;
     resultado7 = superpoder1 > superpoder2;
     printf("A população é %d\n", resultado1);
     printf("A Area é %d\n", resultado2);
@@ -164,13 +164,13 @@ int main() {
 
 
     printf ("\nComparação de cartas (Atributo: População):\n");
-    printf("Carta 1 - São Paulo (SP): %lu habitantes\n", Populacao);
+    printf("Carta 1 - São Paulo (SP): %lu habitantes\n", Populacao1);
     printf("Carta 2 - Rio de Janeiro (RJ): %lu habitantes\n", Populacao2);
 
-          if (Populacao > Populacao2) {
+          if (Populacao1 > Populacao2) {
        printf("Resultado: Carta 1 (São Paulo) venceu!\n");}
        
-       else if (Populacao < Populacao2) 
+       else if (Populacao1 < Populacao2) 
        { 
        printf("Resultado: Carta 2 (Rio de Janeiro) venceu!\n");}
        else {printf("Resultado: Empate!\\n");}
