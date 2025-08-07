@@ -9,15 +9,15 @@ int main() {
     printf("\ncarta 1\n");
 
     char Estado1;
-    char Codigo[50] = "A01";
-    char Cidade[50] = "São Paulo";
-    unsigned long int Populacao = 1232500000;
-    float Area = 1521.11;    
-    float PIB = 699.28;
-    int pontosturisticos = 50;
-    float Densidade = (float)Populacao / Area;//populção/area
-    float Percapita = (PIB * 1e9) / Populacao; //PIB/População
-    float superpoder1 = (Populacao+Area+pontosturisticos+Percapita+(1.0/Densidade));
+    char Codigo1[50] = "A01";
+    char Cidade1[50] = "São Paulo";
+    unsigned long int Populacao1 = 1232500000;
+    float Area1 = 1521.11;    
+    float PIB1 = 699.28;
+    int pontosturisticos1 = 50;
+    float Densidade1;
+    float Percapita1;
+    float superpoder1;
 
 
     
@@ -27,47 +27,52 @@ int main() {
     scanf(" %c", &Estado1);
 
     printf("\nDigite o Codigo (3 digitos)\n");
-    scanf("%s", Codigo);
-    printf("O Codigo é: %s", Codigo);
+    scanf("%19s", Codigo1);
+    printf("\nO Codigo é: %s", Codigo1);
 
     printf("\nDigite a cidade\n");
-    scanf(" %[^\n]", Cidade);    
-    printf("\nA Cidade é: %s", Cidade);
+    scanf(" %49[^\n]", Cidade1);   
+    printf("\nA Cidade é: %s", Cidade1);
 
     printf("\nDigite a População\n");
-    scanf("%lu", &Populacao);    
-    printf("\nA População é: %lu habitantes", Populacao);
+    scanf("%lu", &Populacao1);    
+    printf("\nA População é: %lu habitantes", Populacao1);
 
     printf("\nDigite a Area\n");
-    scanf("%f", &Area);    
-    printf("\nA Area é: %.2f km²", Area);
+    scanf("%f", &Area1);    
+    printf("\nA Area é: %.2f km²", Area1);
 
     printf("\nDigite o PIB\n");
-    scanf("%f", &PIB);    
-    printf("\nO PIB é: %.2f Bilhões", PIB);
+    scanf("%f", &PIB1);    
+    printf("\nO PIB é: %.2f Bilhões", PIB1);
 
     printf("\nDigite o pontosturisticos\n");
-    scanf("%d", &pontosturisticos);    
-    printf("\nO pontosturisticos é: %d", pontosturisticos);
+    scanf("%d", &pontosturisticos1);    
+    printf("\nO pontosturisticos é: %d", pontosturisticos1);
 
     
-    printf("A Densidade Populacional é: %.2f\n", Densidade);
+    printf("A Densidade Populacional é: %.2f\n", Densidade1);
 
    
-    printf("A Densidade Renda Per-Capita é: %.2f\n", Percapita);
+    printf("A Densidade Renda Per-Capita é: %.2f\n", Percapita1);
+
+       //// Cálculos da Carta 1
+    Densidade1 = (float)Populacao1/Area; //populcao/area
+    Percapita1 = (PIB * 1e9)/Populacao1; //PIB/Populacao
+    superpoder1 = (Populacao1+Area1+pontosturisticos1+Percapita1+(1.0/Densidade1));
 
 
     // Exibição dos Dados das Cartas:
     printf("\nCarta 01\n");
     printf("Estado: %c\n", Estado1);
-    printf("Codigo: %s\n", Codigo);
-    printf("Cidade: %s\n", Cidade);
-    printf("Populacao: %lu habitantes\n", Populacao);
+    printf("Codigo: %s\n", Codigo1);
+    printf("Cidade: %s\n", Cidade1);
+    printf("Populacao: %lu habitantes\n", Populacao1);
     printf("Area: %.2f km²\n", Area);
     printf("PIB: %.2f Bilhões\n", PIB);
-    printf("O pontosturisticos é: %d\n", pontosturisticos);
-    printf("A Densidade Populacional é: %.2f\n", Densidade);
-    printf("A Densidade Renda Per-Capita é: %.2f\n", Percapita);
+    printf("O pontosturisticos é: %d\n", pontosturisticos1);
+    printf("A Densidade Populacional é: %.2f\n", Densidade1);
+    printf("A Densidade Renda Per-Capita é: %.2f\n", Percapita1);
     printf("O Super Poder 1 é: %.2f\n", superpoder1);
 
     //informações da carta 2//
@@ -79,20 +84,20 @@ int main() {
     float Area2 = 1200.25;
     float PIB2 = 300.50;
     int pontosturisticos2 = 30;
-    float Densidade2 = (float)Populacao2/Area2; //populção/area
-    float Percapita2= (PIB2 * 1e9)/Populacao2; //PIB/População
-    float superpoder2 = (Populacao2+Area2+pontosturisticos2+Percapita2+(1.0/Densidade2));
+    float Densidade2; 
+    float Percapita2; 
+    float superpoder2; 
     
 
     printf("\nDigite o Estado\n");
     scanf(" %c", &Estado2);
 
     printf("\nDigite o Codigo (3 digitos)\n");
-    scanf("%s", Codigo2);
-    printf("O Codigo é: %s", Codigo2);
+    scanf("%19s", Codigo2);
+    printf("\nO Codigo é: %s", Codigo2);
 
     printf("\nDigite a cidade\n");
-    scanf(" %[^\n]", Cidade2);;    
+    scanf(" %49[^\n]", Cidade2);   
     printf("\nA Cidade é: %s", Cidade2);
 
     printf("\nDigite a População\n");
@@ -111,7 +116,10 @@ int main() {
     scanf("%d", &pontosturisticos2);    
     printf("\nO pontosturisticos é: %d", pontosturisticos2);
 
-    
+    //// Cálculos da Carta 2
+    Densidade2 = (float)Populacao2/Area2; //populção/area
+    Percapita2 = (PIB2 * 1e9)/Populacao2; //PIB/População
+    superpoder2 = (Populacao2+Area2+pontosturisticos2+Percapita2+(1.0/Densidade2));
     
     printf("\nA Densidade Populacional é: %.2f\n", Densidade2);
 
@@ -132,7 +140,7 @@ int main() {
     printf("A Densidade Renda Per-Capita é: %.2f\n", Percapita2);
     printf("O Super Poder 2 é: %.2f\n", superpoder2);
 
-    //(1 para carta1 < carta2 –  0 Carta 1 vence – e  –  1 Carta 2 vence)
+    //(1 para carta1 > carta2 –  0 Carta 1 vence – e  –  1 Carta 2 vence)
 
     int resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7; 
 
@@ -166,22 +174,6 @@ int main() {
        { 
        printf("Resultado: Carta 2 (Rio de Janeiro) venceu!\n");}
        else {printf("Resultado: Empate!\\n");}
-
-       
-
-
-
-
-
-
-
-
-    //Carta 1 - São Paulo (SP): 1232500000
-
-  //Carta 2 - Rio de Janeiro (RJ): 6000000
-
-  //Resultado: Carta 1 (São Paulo) venceu!
-
 
 
     
