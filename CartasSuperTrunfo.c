@@ -21,7 +21,7 @@ int main() {
 
 
     
-
+//usuaria pode inserir os dados
 
     printf("\nDigite o Estado\n");
     scanf(" %c", &Estado1);
@@ -68,6 +68,7 @@ int main() {
     printf("O pontosturisticos é: %d\n", pontosturisticos);
     printf("A Densidade Populacional é: %.2f\n", Densidade);
     printf("A Densidade Renda Per-Capita é: %.2f\n", Percapita);
+    printf("O Super Poder 1 é: %.2f\n", superpoder1);
 
     //informações da carta 2//
 
@@ -129,6 +130,7 @@ int main() {
     printf("O pontosturisticos é: %d\n", pontosturisticos2);
     printf("A Densidade Populacional é: %.2f\n", Densidade2);
     printf("A Densidade Renda Per-Capita é: %.2f\n", Percapita2);
+    printf("O Super Poder 2 é: %.2f\n", superpoder2);
 
     //(1 para carta1 < carta2 –  0 Carta 1 vence – e  –  1 Carta 2 vence)
 
@@ -159,7 +161,13 @@ int main() {
 
           if (Populacao > Populacao2) {
        printf("Resultado: Carta 1 (São Paulo) venceu!\n");}
-       else { printf("Resultado: Carta 2 (Rio de Janeiro) venceu!\n");}
+       
+       else if (Populacao < Populacao2) 
+       { 
+       printf("Resultado: Carta 2 (Rio de Janeiro) venceu!\n");}
+       else {printf("Resultado: Empate!\\n");}
+
+       
 
 
 
