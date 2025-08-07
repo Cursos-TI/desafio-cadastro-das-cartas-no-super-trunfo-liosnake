@@ -74,7 +74,7 @@ int main() {
     char Estado2;
     char Codigo2[50] = "B02";
     char Cidade2[49] = "Rio de Janeiro";
-    unsigned long int Populacao2 = 6748000;
+    unsigned long int Populacao2 = 6000000;
     float Area2 = 1200.25;
     float PIB2 = 300.50;
     int pontosturisticos2 = 30;
@@ -148,6 +148,31 @@ int main() {
     printf("A Densidade é %d\n", resultado5);
     printf("A Renda-Percapita é %d\n", resultado6);
     printf("A super poder é %d\n", resultado7);
+
+    //desafio if e else novato...
+
+
+
+    printf ("\nComparação de cartas (Atributo: População):\n");
+    printf("Carta 1 - São Paulo (SP): %lu habitantes\n", Populacao);
+    printf("Carta 2 - Rio de Janeiro (RJ): %lu habitantes\n", Populacao2);
+
+          if (Populacao > Populacao2) {
+       printf("Resultado: Carta 1 (São Paulo) venceu!\n");}
+       else { printf("Resultado: Carta 2 (Rio de Janeiro) venceu!\n");}
+
+
+
+
+
+
+
+
+    //Carta 1 - São Paulo (SP): 1232500000
+
+  //Carta 2 - Rio de Janeiro (RJ): 6000000
+
+  //Resultado: Carta 1 (São Paulo) venceu!
 
 
 
