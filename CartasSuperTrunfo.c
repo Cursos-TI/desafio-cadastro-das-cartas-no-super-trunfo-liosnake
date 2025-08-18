@@ -159,26 +159,92 @@ int main() {
     printf("A Renda-Percapita é %d\n", resultado6);
     printf("A super poder é %d\n", resultado7);
 
-    //desafio if e else novato...
+    //desafio if e else aventureiro...
+
+    int escolha; // adicionado para o menu do jogo
+
+    printf("\n**Bem-vindo ao jogo SuperTrunfo**\n");
+    printf("Escolha uma opção:\n");
+    printf("1. População\n");
+    printf("2. Área\n");
+    printf("3. PIB\n");
+    printf("4. Número de pontos turísticos\n");
+    printf("5. Densidade demográfica\n");
+    printf("Digite sua escolha (1, 2, 3, 4 ou 5):\n");
+     scanf("%d", &escolha);
 
 
-
-    printf ("\nComparação de cartas (Atributo: População):\n");
-    printf("Carta 1 - São Paulo (SP): %lu habitantes\n", Populacao1);
-    printf("Carta 2 - Rio de Janeiro (RJ): %lu habitantes\n", Populacao2);
-
-          if (Populacao1 > Populacao2) {
-       printf("Resultado: Carta 1 (São Paulo) venceu!\n");}
-       
-       else if (Populacao1 < Populacao2) 
-       { 
-       printf("Resultado: Carta 2 (Rio de Janeiro) venceu!\n");}
-       else {printf("Resultado: Empate!\\n");}
-
-
+      switch (escolha) {
+        case 1: // caso 1 trabalha a escolha de população
+            printf("Você escolheu (Atributo: População) - \n");
+            
+            if (Populacao1 > Populacao2) {
+        printf("**Voce venceu**...A carta 1 é maior que a carta 2\n");
+    }
+    else if (Populacao1 < Populacao2) {
+        printf("**Voce perdeu**...A carta 2 é maior que a carta 1\n");
+    }
+    else {
+        printf("**Empate** As cartas são iguais\n");
+    }
+    break;
+            
+        case 2: // caso 2 trabalha a escolha de Area 
+            printf("Você escolheu (Atributo: Área) - \n");
+            if (Area1 > Area2) {
+        printf("**Voce venceu**...A carta 1 é maior que a carta 2\n");
+    }
+    else if (Area1 < Area2) {
+        printf("**Voce perdeu**...A carta 2 é maior que a carta 1\n");
+    }
+    else {
+        printf("**Empate** As cartas são iguais\n");
+    }
+    break;
+            
+        case 3:  // caso 3 trabalha a escolha de PIB
+            printf("Você escolheu (Atributo: PIB) - \n");
+            if (PIB1 > PIB2) {
+        printf("**Voce venceu**...A carta 1 é maior que a carta 2\n");
+    }
+    else if (PIB1 < PIB2) {
+        printf("**Voce perdeu**...A carta 2 é maior que a carta 1\n");
+    }
+    else {
+        printf("**Empate** As cartas são iguais\n");
+    }
+    break;
+     
+        case 4: // caso 4 trabalha a escolha de Pontos turisticos
+            printf("Você escolheu (Atributo: Número de pontos turísticos) - \n");
+             if (pontosturisticos1 > pontosturisticos2) {
+        printf("**Voce venceu**...A carta 1 é maior que a carta 2\n");
+    }
+    else if (pontosturisticos1 < pontosturisticos2) {
+        printf("**Voce perdeu**...A carta 2 é maior que a carta 1\n");
+    }
+    else {
+        printf("**Empate** As cartas são iguais\n");
+    }
+    break;
+          
+        case 5: // caso 5 trabalha a escolha de densidade
+            printf("Você escolheu (Atributo: Densidade demográfica) - \n");
+            if (Densidade1 < Densidade2) {
+        printf("**Voce venceu**...A carta 1 é maior que a carta 2\n");
+    }
+    else if (Densidade1 > Densidade2) {
+        printf("**Voce perdeu**...A carta 2 é maior que a carta 1\n");
+    }
+    else {
+        printf("**Empate** As cartas são iguais\n");
+    }
+    break;
     
+    default: // este serve se o usuario digitar numeto diferente.
+            printf("Opção inválida. Por favor, escolha 1, 2 ou 3.\n");
+    }
 
-    
-
-    return 0;
+            
+      return 0;
 }
