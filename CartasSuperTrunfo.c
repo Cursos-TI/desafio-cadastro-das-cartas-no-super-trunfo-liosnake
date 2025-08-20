@@ -57,8 +57,8 @@ int main() {
     printf("A Densidade Renda Per-Capita é: %.2f\n", Percapita1);
 
        //// Cálculos da Carta 1
-    Densidade1 = (float)Populacao1/Area1; //populcao/area
-    Percapita1 = (PIB1 * 1e9)/Populacao1; //PIB/Populacao
+    Densidade1 = (float)Populacao1/Area1; 
+    Percapita1 = (PIB1 * 1e9)/Populacao1; 
     superpoder1 = (Populacao1+Area1+pontosturisticos1+Percapita1+(1.0/Densidade1));
 
 
@@ -117,8 +117,8 @@ int main() {
     printf("\nO pontosturisticos é: %d", pontosturisticos2);
 
     //// Cálculos da Carta 2
-    Densidade2 = (float)Populacao2/Area2; //populção/area
-    Percapita2 = (PIB2 * 1e9)/Populacao2; //PIB/População
+    Densidade2 = (float)Populacao2/Area2; 
+    Percapita2 = (PIB2 * 1e9)/Populacao2; 
     superpoder2 = (Populacao2+Area2+pontosturisticos2+Percapita2+(1.0/Densidade2));
     
     printf("\nA Densidade Populacional é: %.2f\n", Densidade2);
